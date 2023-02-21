@@ -4,7 +4,7 @@
       "host": "http://localhost:3000",
     },
     "vercel": {
-      "host": "https://ga-vercel-demo.vercel.app",
+      "host": "https://project-2-mauve.vercel.app",
     }
   }
 }

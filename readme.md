@@ -21,4 +21,27 @@
 
 -----MVP----
 
-users will be able
+users will be has access to Create, Read, Update, Delete functionalities. and save their current progress
+
+
+----Post MVP----
+
+
+if time allows, create users and apply user identification
+
+
+----goals----
+
+21 - research 
+22 - start implementing the database seed
+23 - have the database fully functional 
+24 - begin implementing crud functionalities
+25 - finish implementing crud functionalities
+26 - research user identification
+27 - finish implementing all functionalities
+
+
+
+
+
+
