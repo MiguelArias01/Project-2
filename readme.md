@@ -41,6 +41,10 @@ if time allows, create users and apply user identification
 27 - finish implementing all functionalities
 
 
+----- Data Model -----
+
+
+
 
 
 
