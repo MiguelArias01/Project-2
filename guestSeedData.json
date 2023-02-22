@@ -1,0 +1,7 @@
+{
+  "name": "Tim",
+  "food": ["cheetos", "cat food"],
+  "drink": ["Vodka", "Sparkling Soda"],
+  "plusOne": true,
+  "canJD": true
+}
