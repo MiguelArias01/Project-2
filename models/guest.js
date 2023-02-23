@@ -9,7 +9,8 @@ const Guest = new Schema({
   food: [],
   drink: [],
   plusOne: Boolean,
-  canJD: Boolean,
+  canDJ: Boolean
+
 })
 
 export default mongoose.model('guests', Guest)

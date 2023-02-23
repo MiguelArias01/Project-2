@@ -7,6 +7,45 @@
 
 # You'll need to switch to either `local` or `vercel` to get started.
 
-@baseUrl = {{host}}/api/
-
+@baseUrl = {{host}}/api/event/
 GET {{baseUrl}}
+###
+
+GET  {{baseUrl}}Miguel
+
+###
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "hostName": "Tim",
+    "Street": "Care Facts",
+    "city": "over there",
+    "date": 202020,
+    "time": 1520,
+    "info": "bring a hat",
+    "notInvited": [
+      "cats"
+    ]
+  }
+###
+PATCH {{baseUrl}}Tim
+Content-Type: application/json
+
+{
+ 
+    "Street": "another one"
+}
+###
+
+DELETE {{baseUrl}}Tim
+###
+@evendid = 63f63c4668a618eb888f6681
+@guestid = 63f63c4668a618eb888f6684
+PATCH  {{baseUrl}}63f63c4668a618eb888f6681/63f63c4668a618eb888f6684
+Content-Type: application/json
+
+{
+  "guessList":["3f63c4668a618eb888f6684"]
+}

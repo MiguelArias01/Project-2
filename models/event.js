@@ -18,3 +18,5 @@ const Event = new Schema({
 })
 
 export default mongoose.model('events', Event)
+
+
