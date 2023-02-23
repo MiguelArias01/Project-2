@@ -2,7 +2,7 @@
 
 import Event from './models/event.js'
 
-import Guest from './models/guest.js'
+//import Guest from './models/guest.js'
 
 
 
@@ -13,8 +13,8 @@ export async function addGuestsToEvent(req, res)
 
   console.log(eventid,guestid)
 
-  await Event.findByIdAndUpdate({eventid}, { guessList: [guestid] })
-    .then(event => { res.json(event)})
+  const item = await Event.findByIdAndUpdate({ _id: eventid }, { guessList: [guestid] })
+  res.json(item)
     
 } 
 

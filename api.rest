@@ -41,11 +41,7 @@ Content-Type: application/json
 
 DELETE {{baseUrl}}Tim
 ###
-@evendid = 63f63c4668a618eb888f6681
-@guestid = 63f63c4668a618eb888f6684
-PATCH  {{baseUrl}}63f63c4668a618eb888f6681/63f63c4668a618eb888f6684
-Content-Type: application/json
-
-{
-  "guessList":["3f63c4668a618eb888f6684"]
-}
+@evendid = 63f7d2b0d92fb51c262525ee
+@guestid = 63f7d2b0d92fb51c262525f1
+PATCH  {{baseUrl}}63f7d2b0d92fb51c262525ee/63f7d2b0d92fb51c262525f1
+###
