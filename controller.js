@@ -2,8 +2,19 @@
 
 import Event from './models/event.js'
 
-//import Guest from './models/guest.js'
+import Guest from './models/guest.js'
 
+
+export async function createGuest(req, res)
+{
+  let guestBody = req.body
+  
+  Guest.create(guestBody)
+    .then(event => {
+      res.json(event)
+    })
+  return
+} 
 
 
 export async function addGuestsToEvent(req, res)
