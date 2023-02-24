@@ -45,3 +45,15 @@ DELETE {{baseUrl}}Tim
 @guestid = 63f7d2b0d92fb51c262525f1
 PATCH  {{baseUrl}}63f7d2b0d92fb51c262525ee/63f7d2b0d92fb51c262525f1
 ###
+@guesturl = {{host}}/api/
+POST {{guesturl}}guest/
+Content-Type: application/json
+
+{
+  "name": "antony",
+  "food": ["chips"],
+  "drink": ["soda"],
+  "plusOne": false,
+  "canDJ": false
+
+}

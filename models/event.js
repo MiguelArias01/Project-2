@@ -1,5 +1,5 @@
 //@ts-check
-import mongoose from '../connection.js'
+import mongoose from 'mongoose'
 
 
 
