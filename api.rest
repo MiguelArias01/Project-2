@@ -11,7 +11,7 @@
 GET {{baseUrl}}
 ###
 
-GET  {{baseUrl}}Miguel
+GET  {{baseUrl}}
 
 ###
 
@@ -19,7 +19,7 @@ POST {{baseUrl}}
 Content-Type: application/json
 
 {
-    "hostName": "Tim",
+    "hostName": "timmy",
     "Street": "Care Facts",
     "city": "over there",
     "date": 202020,
@@ -56,4 +56,13 @@ Content-Type: application/json
   "plusOne": false,
   "canDJ": false
 
+}
+
+###
+PATCH {{baseUrl}}guest/Tim
+Content-Type: application/json
+
+{
+ 
+    "name": "Tim the second"
 }

@@ -1,8 +1,48 @@
 //@ts-check
-
 import Event from './models/event.js'
-
 import Guest from './models/guest.js'
+
+
+export function deleteGuest(req, res) {
+  Guest.findOneAndDelete({name: req.params.name})
+    .then(event => {
+      res.json(event)
+    })
+  return
+}
+
+
+
+export function editGuest(req, res) {
+  Guest
+    .findOneAndUpdate({name: req.params.name}, req.body)
+    .then(event => {
+      res.json(event)
+    })
+  return
+}
+
+
+
+
+export function guestIndex(req, res) {
+  Guest
+    .find({})
+    .then(event => {
+      res.json(event)
+    })
+}
+
+
+export async function showGuests(req, res) {
+
+  Guest
+    .find({name: req.params.name})
+    .then(event=> res.json(event))
+  return
+  
+}
+
 
 
 export async function createGuest(req, res)
@@ -36,18 +76,12 @@ export function index(req, res) {
       res.json(event)
     })
 }
-export async function showYearOrName(req, res) {
-  if (parseInt(req.params.yearOrName)) {
-    Event
-      .find({date: req.params.yearOrName})
-      .then(event => res.json(event))
-    return
-  }else{
-    Event
-      .find({hostName: req.params.yearOrName})
-      .then(event=> res.json(event))
-    return
-  }
+export async function showName(req, res) {
+  Event
+    .find({hostName: req.params.name})
+    .then(event=> res.json(event))
+  return
+  
 }
 export function create(req, res) {
   let newEvent = req.body
