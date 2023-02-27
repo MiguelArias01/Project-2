@@ -64,10 +64,26 @@ export async function addGuestsToEvent(req, res)
 
   console.log(eventid,guestid)
 
-  const item = await Event.findByIdAndUpdate({ _id: eventid }, { guessList: [guestid] })
+  const item = await Event.findByIdAndUpdate({ _id: eventid },
+    { $push: { guessList: [guestid] } })
   res.json(item)
-    
+
+  return  
 } 
+
+export async function deleteGuestsToEvent(req, res)
+{
+  let { id, guestid} = req.params
+ 
+  console.log(id,guestid)
+
+  const item = await Event.findByIdAndRemove({ _id: id },
+    { $pull: { guessList: [guestid] } })
+  res.json(item)
+
+  return  
+} 
+
 
 export function index(req, res) {
   Event

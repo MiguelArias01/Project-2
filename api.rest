@@ -7,7 +7,7 @@
 
 # You'll need to switch to either `local` or `vercel` to get started.
 
-@baseUrl = {{host}}/api/event/
+@baseUrl = {{host}}/api/event
 GET {{baseUrl}}
 ###
 
@@ -39,18 +39,20 @@ Content-Type: application/json
 }
 ###
 
-DELETE {{baseUrl}}Tim
+DELETE {{baseUrl}}/Tim
 ###
-@evendid = 63f7d2b0d92fb51c262525ee
-@guestid = 63f7d2b0d92fb51c262525f1
-PATCH  {{baseUrl}}63f7d2b0d92fb51c262525ee/63f7d2b0d92fb51c262525f1
+@evendid = 63f92e4aa4baa94e84b40034
+@guestid = 63fbaaa94495c37d0baed00f
+PATCH  {{baseUrl}}/{{evendid}}/{{guestid}}
 ###
-@guesturl = {{host}}/api/
-POST {{guesturl}}guest/
+ DELETE {{baseUrl}}/{{evendid}}/{{guestid}}
+###
+@guesturl = {{host}}/api/guest
+POST {{guesturl}}
 Content-Type: application/json
 
 {
-  "name": "antony",
+  "name": "steven",
   "food": ["chips"],
   "drink": ["soda"],
   "plusOne": false,
@@ -66,3 +68,7 @@ Content-Type: application/json
  
     "name": "Tim the second"
 }
+
+###
+
+DELETE {{guesturl}}/antony
