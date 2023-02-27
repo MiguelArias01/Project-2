@@ -71,19 +71,19 @@ export async function addGuestsToEvent(req, res)
   return  
 } 
 
-export async function deleteGuestsToEvent(req, res)
+export async function updateGuestsFromEvent(req, res)
 {
+  console.log('its me who you are looking for')
   let { id, guestid} = req.params
  
   console.log(id,guestid)
 
-  const item = await Event.findByIdAndRemove({ _id: id },
-    { $pull: { guessList: [guestid] } })
+  const item = await Event.findOneAndUpdate({ _id: id },
+    { $pull: { guessList: guestid } },
+    {new: true})
   res.json(item)
-
   return  
 } 
-
 
 export function index(req, res) {
   Event
