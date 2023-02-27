@@ -19,9 +19,9 @@ POST {{baseUrl}}
 Content-Type: application/json
 
 {
-    "hostName": "jack",
-    "Street": "Care Facts",
-    "city": "over there",
+    "hostName": "Jack",
+    "Street": "123 CareFacts ave",
+    "city": "NYC",
     "date": 202020,
     "time": 1520,
     "info": "bring a hat",

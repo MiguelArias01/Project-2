@@ -4,7 +4,7 @@
       "host": "http://localhost:3000",
     },
     "vercel": {
-      "host": "https://project-2-mauve.vercel.app",
+      "host": "https://tevent-mauve.vercel.app",
     }
   }
 }
