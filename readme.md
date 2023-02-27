@@ -16,19 +16,19 @@ the API will return JSON as its format.
 
 
 ----API Snippet----
-
-<img width="1089" alt="Screenshot 2023-02-21 at 11 45 56" src="https://user-images.githubusercontent.com/79764475/220410318-007681ef-c005-4c57-8a37-3c7aab5fe6f3.png">
+<img width="325" alt="Screenshot 2023-02-27 at 16 33 23" src="https://user-images.githubusercontent.com/79764475/221690717-cfa6df25-df33-49c5-93a0-50b65840117b.png">
 
 
 -----MVP----
 
-users will be has access to Create, Read, Update, Delete functionalities. and save their current progress
+users will be has access to Create, Read, Update, Delete functionalities. This including adding events, adding guests to the guest list and removing guest 
+who no longer want to attend.
 
 
 ----Post MVP----
 
 
-if time allows, create users and apply user identification
+Implement front end functionality, and make it user friendly.
 
 
 ----goals----
