@@ -41,8 +41,8 @@ Content-Type: application/json
 
 DELETE {{baseUrl}}/timmy
 ###
-@evendid = 63fcf7f8c559871bbe14b453
-@guestid =  63fcd677ffc059778476b7e5
+@evendid = 63fd00a59ba8f0f463ef0a28
+@guestid =  63fd00a69ba8f0f463ef0a2c
 PATCH  {{baseUrl}}/{{evendid}}/{{guestid}}
 ###
 PATCH  {{baseUrl}}/d/{{evendid}}/{{guestid}}
